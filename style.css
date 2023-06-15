@@ -138,5 +138,6 @@ img {
 
     .container {
         width: 350px;
+        aspect-ratio: 1.78;
     }
 }
