@@ -143,7 +143,7 @@ img {
     }
 
     .wrapper {
-        column-gap: 1rem;
+        justify-content: space-between;
     }
     
     .item {
@@ -151,7 +151,7 @@ img {
     }
 
     input {
-        width: 50px;
+        width: 62px;
         height: 30px;
         padding: 9px;
         margin-top: 2px;
@@ -161,10 +161,24 @@ img {
     .break {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        margin: 20px 0;
     }
     
+    hr {
+        width: 100%;
+    }
+
     button {
-        top: 50%;
-        transform: translateY(-50%);
+        position: absolute;
+    }
+
+    .result {
+        padding-top: 10px;
+    }
+
+    .result p {
+        font-size: 42px;
+        margin: 5px 0;
     }
 }
