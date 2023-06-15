@@ -1,0 +1,135 @@
+@font-face {
+    font-family: Poppins Bold;
+    src: url(assets/fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: Poppins Bold Italic;
+    src: url(assets/fonts/Poppins-ExtraBoldItalic.ttf);
+}
+
+:root {
+    --purple: hsl(259, 100%, 65%);
+    --lightRed: hsl(0, 100%, 67%);
+    --white: hsl(0, 0%, 100%);
+    --offWhite: hsl(0, 0%, 94%);
+    --lightGrey: hsl(0, 0%, 86%);
+    --smokeyGrey: hsl(0, 1%, 44%);
+    --offBlack: hsl(0, 0%, 8%);
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--offWhite);
+    overflow: hidden;
+}
+
+.container {
+    height: 380px;
+    aspect-ratio: 1.33;
+    border-radius: 10px 10px 100px 10px;
+    box-shadow: 0 0 15px 3px #0001;
+    background-color: var(--white);
+    padding: 2.5rem;
+}
+
+.wrapper {
+    display: flex;
+    column-gap: 2rem;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    height: 95px;
+}
+
+label {
+    color: var(--smokeyGrey);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: 'Poppins Bold';
+    font-size: 12px;
+    font-weight: 400;
+}
+
+input {
+    width: 96px;
+    height: 32px;
+    padding: 8px;
+    margin-top: 2px;
+    border: solid 1px var(--lightGrey);
+    border-radius: 5px;
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--offBlack);
+}
+
+.break {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+hr {
+    width: 88%;
+    border-color: var(--offWhite);
+}
+
+button {
+    background-color: var(--purple);
+    border-color: transparent;
+    border-radius: 30px;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+img {
+    width: 30px;
+}
+
+.result {
+    display: block;
+}
+
+.result p {
+    font-size: 36px;
+    font-weight: 800;
+    font-family: 'Poppins Bold Italic';
+    color: var(--offBlack);
+    margin: 20px 0;
+}
+
+#numbers {
+    color: var(--purple);
+}
+
+.attribution {
+    font-family: monospace;
+    font-size: 11px;
+    font-weight: 700;
+    text-align: center;
+    user-select: none;
+}
+
+.attribution a {
+    text-decoration: none;
+    color: hsl(228, 45%, 44%);
+}
+
+.attribution a:last-child {
+    color: red
+}
+
+@media (max-width: 400px) {
+    
+}
