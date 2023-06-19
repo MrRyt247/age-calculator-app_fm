@@ -18,6 +18,10 @@
     --offBlack: hsl(0, 0%, 8%);
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     height: 100vh;
     display: flex;
