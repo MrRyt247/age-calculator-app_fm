@@ -12,30 +12,30 @@
     <div class="wrapper">
       <div class="item">
         <label>Day</label>
-        <input type="number" id="inputDay" placeholder="DD" required>
-        <p class="error"></p>
+        <input type="number" id="inputDate" placeholder="DD" required>
+        <p class="log"></p>
       </div>
       <div class="item">
         <label>Month</label>
         <input type="number" id="inputMonth" placeholder="MM" required>
-        <p class="error"></p>
+        <p class="log"></p>
       </div>
       <div class="item">
         <label>Year</label>
         <input type="number" id="inputYear" placeholder="YYYY" required>
-        <p class="error"></p>
+        <p class="log"></p>
       </div>
     </div>
     <div class="break">
       <hr>
-      <button type="submit">
+      <button onclick="age()">
         <img src="assets/images/icon-arrow.svg" alt="icon-arrow">
       </button>
     </div>
     <div class="result">
       <p><span class="number" id="resultYear">--</span> years</p>
       <p><span class="number" id="resultMonth">--</span> months</p>
-      <p><span class="number" id="resultDay">--</span> days</p>
+      <p><span class="number" id="resultDate">--</span> days</p>
     </div>
   </div>
   <div class="attribution">
