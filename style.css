@@ -1,4 +1,9 @@
 @font-face {
+    font-family: Poppins;
+    src: url(assets/fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
     font-family: Poppins Bold;
     src: url(assets/fonts/Poppins-Bold.ttf);
 }
@@ -38,8 +43,8 @@ body {
 }
 
 .container {
-    height: 380px;
-    aspect-ratio: 1.33;
+    height: 440px;
+    aspect-ratio: 1.2;
     border-radius: 10px 10px 120px 10px;
     box-shadow: 0 0 15px 3px #0001;
     background-color: var(--white);
@@ -73,8 +78,9 @@ input {
     margin-top: 2px;
     border: solid 1px var(--lightGrey);
     border-radius: 5px;
+    font-family: 'Poppins';
     font-size: 22px;
-    font-weight: 600;
+    font-weight: 700;
     color: var(--offBlack);
 }
 
@@ -114,15 +120,15 @@ img {
 
 .result {
     display: block;
-    line-height: 32px;
+    line-height: 65px;
 }
 
 .result p {
-    font-size: 36px;
-    font-weight: 800;
+    font-size: 65px;
+    font-weight: bolder;
     font-family: 'Poppins Bold Italic';
     color: var(--offBlack);
-    margin: 20px 0;
+    margin: 0;
 }
 
 .number {
