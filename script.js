@@ -1,13 +1,13 @@
 function age() {
+  const inputDate = document.getElementById("inputDate").value;
+  const inputMonth = document.getElementById("inputMonth").value;
+  const inputYear = document.getElementById("inputYear").value;
+
   const d = new Date();
   const currentDate = d.getDate();
   var currentMonth = d.getMonth() + 1;
   var currentYear = d.getFullYear();
-  const lastDate = new Date(currentYear, currentMonth, 0).getDate();
-
-  const inputDate = document.getElementById("inputDate").value;
-  const inputMonth = document.getElementById("inputMonth").value;
-  const inputYear = document.getElementById("inputYear").value;
+  const lastDate = new Date(inputYear, inputMonth, 0).getDate();
 
   const label = document.querySelectorAll("label");
   const input = document.querySelectorAll("input");
@@ -59,7 +59,7 @@ function age() {
       input[2].style.borderColor = "var(--lightGrey)";
       log[2].innerText = "";
   }
-
+  console.log(lastDate);
   let check = a === b && a === c && b === c;
   if (!check) {
   } else {
